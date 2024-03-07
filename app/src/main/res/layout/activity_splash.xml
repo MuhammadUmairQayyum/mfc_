@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/myprimary"
+    tools:context=".Splash">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/crypto"
+        android:id="@+id/image"
+
+
+        >
+
+
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/sparkles"
+        android:layout_margin="20dp"
+        android:id="@+id/imv1"
+        android:visibility="gone"
+        >
+
+    </ImageView>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/sparkles"
+        android:layout_margin="20dp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/imv2"
+        android:visibility="gone"
+        >
+
+    </ImageView>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/sparkles"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:id="@+id/imv3"
+        android:visibility="gone"
+        >
+
+    </ImageView>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/sparkles"
+        android:layout_margin="20dp"
+        android:id="@+id/imv4"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        >
+
+    </ImageView>
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="10dp"
+
+        android:layout_centerInParent="true">
+
+        <!-- M TextView -->
+        <TextView
+            android:id="@+id/textViewM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"
+            android:fontFamily="@font/frontly"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:textSize="65dp"
+            />
+
+        <!-- F TextView -->
+        <TextView
+            android:id="@+id/textViewF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"
+            android:textColor="#FFD700"
+            android:fontFamily="@font/frontly"
+            android:textStyle="bold"
+            android:textSize="65dp"
+            android:layout_toRightOf="@id/textViewM"/>
+
+        <!-- C TextView -->
+        <TextView
+            android:id="@+id/textViewC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"
+
+            android:fontFamily="@font/frontly"
+            android:textColor="#FFD700"
+            android:textStyle="bold"
+            android:textSize="65dp"
+            android:layout_below="@id/textViewM"
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/container"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/bottomHeading"
+            android:text="My Future Network"
+            android:textColor="#FFD700"
+
+            android:textSize="30dp"
+            android:fontFamily="@font/frontly"
+            >
+
+
+        </TextView>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="star image"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/sparkles"
+            tools:ignore="VectorDrawableCompat" />
+
+    </FrameLayout>
+</RelativeLayout>

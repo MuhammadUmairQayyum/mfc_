@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myprimary"
+
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#e74425"
+        android:elevation="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txtTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toEndOf="@id/ibBack"
+            android:gravity="left|center_vertical"
+            android:includeFontPadding="false"
+            android:text="Verify Phone "
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_white" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/myprimary"
+        android:elevation="10dp"
+        android:layoutDirection="ltr">
+
+        <TextView
+            android:id="@+id/tvDigi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="60dp"
+            android:text="MFN"
+            android:textColor="@color/mygold"
+            android:fontFamily="@font/frontly"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tvDigi"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/crypto" />
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp"
+        android:fillViewport="true"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:id="@+id/linearTop"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+
+
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="15dp"
+                    android:background="@drawable/ic_secure"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtTrust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:textStyle="bold"
+                    android:gravity="left"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/frontly"
+                    android:text="MFN - My Future Network"
+                    android:textSize="36dp" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/linearCode"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+
+                android:background="#FFFFFF"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/ic_outline_message_24" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/imageView"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_toRightOf="@id/imageView">
+
+                    <TextView
+                        android:id="@+id/txtSent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toStartOf="@id/tvCodeSentTo"
+                        android:gravity="left"
+                        android:includeFontPadding="false"
+                        android:text="Sent to"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/tvCodeSentTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="5dp"
+                        android:includeFontPadding="false"
+                        android:layoutDirection="ltr"
+                        android:text="tvCodeSentTo"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:id="@+id/btnEditNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/tvCodeSentTo"
+                        android:layout_alignParentRight="true"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:text="Edit Number"
+                        android:textAllCaps="true"
+                        android:textColor="#007399"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/linearTop"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/rlPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linearTop"
+                android:orientation="horizontal"
+
+                android:weightSum="5"
+                android:layoutDirection="ltr">
+                <LinearLayout
+                    android:id="@+id/linearCountry"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="2"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/border_country"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+                    >
+
+
+
+
+                    <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:ccp_defaultNameCode="Pk"
+
+                        app:ccp_defaultCode="92"
+                        app:ccp_textColor="#1C2020"
+                        style="@style/CardView.Light"
+                        android:padding="16dp"
+                        app:ccp_countryPreference="PK,IN,US,NZ"/>
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/etNumber"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="3"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/linearCountry"
+                    android:background="@drawable/bg_orange_border"
+                    android:gravity="center_vertical|left"
+                    android:hint="Enter you mobile number"
+                    android:includeFontPadding="false"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#808080"
+                    android:textDirection="ltr"
+                    android:textSize="14dp" />
+
+
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlPhone"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+
+                android:textSize="18dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/tvCountdown"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/etCode"
+                android:layout_marginStart="8dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:paddingStart="10dp"
+                android:text="Resend code after"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etCode"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_below="@id/linearCode"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_orange_border"
+                android:clickable="true"
+                android:textColor="#000"
+                android:textColorHint="#808080"
+                android:focusable="true"
+                android:gravity="center_vertical|left"
+                android:hint="Enter 6 digit code sent to your number"
+                android:includeFontPadding="false"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="16dp"
+                android:visibility="invisible" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/etCode"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:visibility="gone">
+
+            </ProgressBar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etCode"
+                android:orientation="vertical"></LinearLayout>
+
+            <Button
+                android:id="@+id/btnResendCode"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/etCode"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@drawable/ic_outline_msg_24"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:gravity="start|center_vertical"
+                android:includeFontPadding="false"
+                android:text="Resend Code"
+                android:textAllCaps="true"
+                android:textColor="#007399"
+                android:textSize="12dp"
+                android:visibility="invisible" />
+
+
+
+            <TextView
+                android:id="@+id/tv_did_not"
+                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/etCode"
+                android:layout_marginStart="8dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="Did not received code?"
+                android:textAllCaps="false"
+                android:textColor="#b30000"
+                android:textSize="12dp"
+                android:visibility="gone" />
+
+
+            <Button
+                android:id="@+id/btnGetPin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/orange_button"
+                android:enabled="false"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:text="Get Pin"
+                android:textAllCaps="false"
+                android:textColor="@color/myprimary"
+                android:textSize="16dp" />
+
+
+
+                <Button
+                    android:id="@+id/btnGetPin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/orange_button"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:includeFontPadding="false"
+
+                    android:textAllCaps="false"
+                    android:visibility="gone"
+                    android:textColor="#fff"
+                    android:textSize="16dp" />
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/orange_button"
+                android:enabled="false"
+                android:focusable="false"
+                android:includeFontPadding="false"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F3F3"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

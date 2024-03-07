@@ -1,0 +1,155 @@
+{
+  "project_info": {
+    "project_number": "425040275689",
+    "firebase_url": "https://myfututrenetwork-default-rtdb.firebaseio.com",
+    "project_id": "myfututrenetwork",
+    "storage_bucket": "myfututrenetwork.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425040275689:android:d923fcfe4e3ffb626ce878",
+        "android_client_info": {
+          "package_name": "com.androidapp.mfc_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425040275689-4094vo4lmj6q7osuq3ssu9ujo8hkjnkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEf2Xgibrpti0pnVsH-Mw-RozELfO3aYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425040275689-4094vo4lmj6q7osuq3ssu9ujo8hkjnkl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "425040275689-6iaropeh8jbbmlmtqljtvhu2s8kghfoa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.phoneNumberSignIn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425040275689:android:5a57b92ce75212d66ce878",
+        "android_client_info": {
+          "package_name": "com.bala.firebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425040275689-4094vo4lmj6q7osuq3ssu9ujo8hkjnkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEf2Xgibrpti0pnVsH-Mw-RozELfO3aYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425040275689-4094vo4lmj6q7osuq3ssu9ujo8hkjnkl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "425040275689-6iaropeh8jbbmlmtqljtvhu2s8kghfoa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.phoneNumberSignIn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425040275689:android:85ab7671e16d511d6ce878",
+        "android_client_info": {
+          "package_name": "com.example.my_future_network"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425040275689-4094vo4lmj6q7osuq3ssu9ujo8hkjnkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEf2Xgibrpti0pnVsH-Mw-RozELfO3aYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425040275689-4094vo4lmj6q7osuq3ssu9ujo8hkjnkl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "425040275689-6iaropeh8jbbmlmtqljtvhu2s8kghfoa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.phoneNumberSignIn"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425040275689:android:dd90645d4306c73b6ce878",
+        "android_client_info": {
+          "package_name": "com.example.phone_number_sign_in"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425040275689-4094vo4lmj6q7osuq3ssu9ujo8hkjnkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEf2Xgibrpti0pnVsH-Mw-RozELfO3aYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "425040275689-4094vo4lmj6q7osuq3ssu9ujo8hkjnkl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "425040275689-6iaropeh8jbbmlmtqljtvhu2s8kghfoa.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.phoneNumberSignIn"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
