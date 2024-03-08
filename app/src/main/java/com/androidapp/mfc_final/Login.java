@@ -248,7 +248,11 @@ public class Login extends AppCompatActivity {
 
                  //   country_code = "+91";
 
-                    entered_number = country_code + entered_number;
+                    if(!entered_number.startsWith(country_code))
+                    {
+                        entered_number = country_code + entered_number;
+                    }
+
 
                     SendByFireBase();
 //                    if (country_code.equals("+91") /*&& !operator.equals("33")*/) {
@@ -447,7 +451,7 @@ public class Login extends AppCompatActivity {
 //                    tv_did_not.setVisibility(View.VISIBLE);
                 }
 
-                Toast.makeText(Login.this, e.getMessage(), Toast.LENGTH_LONG).show();
+                Toast.makeText(Login.this,"Something went wrong, Please try again later \n"+ e.getMessage(), Toast.LENGTH_LONG).show();
             }
         };
 

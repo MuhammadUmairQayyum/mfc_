@@ -111,9 +111,9 @@
                     android:textStyle="bold"
                     android:gravity="left"
                     android:textColor="#fff"
-                    android:fontFamily="@font/frontly"
+
                     android:text="MFN - My Future Network"
-                    android:textSize="36dp" />
+                    android:textSize="20dp" />
 
             </LinearLayout>
 
@@ -387,7 +387,7 @@
                 android:includeFontPadding="false"
                 android:text="Get Pin"
                 android:textAllCaps="false"
-                android:textColor="@color/myprimary"
+                android:textColor="@color/black"
                 android:textSize="16dp" />
 
 
